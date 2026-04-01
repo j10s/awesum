@@ -1,0 +1,15 @@
+[workspace]
+members = ["cli", "lib"]
+resolver = "2"
+
+[workspace.dependencies]
+anyhow = "1.0.102"
+lib = { path = "./lib", version = "*" }
+rayon = "1.11.0"
+strum = { version = "0.28.0", features = ["derive"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+debug = false
+strip = true

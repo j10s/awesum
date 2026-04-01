@@ -1,0 +1,17 @@
+[package]
+name = "awesum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow.workspace = true
+lib.workspace = true
+clap = { version = "4.5.23", features = ["derive"] }
+console = "0.16.2"
+indicatif = { version = "0.18.3", features = ["rayon"] }
+num_cpus = "1.16.0"
+rayon.workspace = true
+strum.workspace = true
+
+[[bin]]
+name = "awesum"
