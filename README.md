@@ -1,5 +1,10 @@
 # awesum
 
+## Installation
+
+1. Install Rust from http://rustup.rs/
+2. Run `cargo install --git https://github.com/j10s/awesum.git`
+
 ## Usage
 ```
 Print or check checksums
@@ -32,6 +37,3 @@ You probably want to redirect this output to a file e.g
 
 #### Check
 `awesum -c -a crc32 sums.sfv`
-
-## Build
-Run `cargo build --release --bin awesum` in the project root and the `awesum` executable will be in `./target/release`.
